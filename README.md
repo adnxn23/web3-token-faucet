@@ -2,6 +2,9 @@
 
 The **Web3 Token Faucet** is a decentralized application (dApp) that allows users to request and receive small amounts of ERC-20 tokens on an Ethereum testnet. It's designed for developers, educators, and projects needing test tokens for development, experimentation, or learning.
 
+**Live Demo:**  
+[https://web3-token-faucet-2joq.vercel.app](https://web3-token-faucet-2joq.vercel.app)
+
 ---
 
 ## Features
@@ -9,8 +12,8 @@ The **Web3 Token Faucet** is a decentralized application (dApp) that allows user
 ### Smart Contract
 
 - Mint or transfer ERC-20 tokens to user addresses.
-- Enforce rate limits per wallet (e.g., 1 claim per 24 hours).
-- Owner-only admin controls (pause faucet, change limits, etc.).
+- Enforce rate limits per wallet (1 claim per wallet per 24 hours).
+- Owner-only admin controls for pausing the faucet and config changes.
 
 ### Frontend
 
@@ -36,7 +39,6 @@ The **Web3 Token Faucet** is a decentralized application (dApp) that allows user
 | Dev Tools          | Hardhat                         |
 | Frontend           | Vite + React + Ethers.js        |
 | Styling            | Tailwind CSS                    |
-| Backend (optional) | Node.js + Express (not used)    |
 | Libraries          | Ethers.js, dotenv, OpenZeppelin |
 
 ---
@@ -115,28 +117,19 @@ npm run dev
 
 ---
 
-## Project Status
+## Future Improvements (Not Yet Implemented)
 
-- [x] Contract written and deployed
-- [x] Frontend connected and working
-- [ ] Deployed to hosting (Vercel, Netlify, etc.)
-- [ ] Backend API with rate limits (optional)
-- [ ] reCAPTCHA (optional)
-
----
-
-## Potential Features (Future Work)
-
-- Admin dashboard for faucet controls
-- reCAPTCHA for bot prevention
+- Google reCAPTCHA to prevent bots.
 - Real ERC-20 token faucet with branding
-- Discord or Twitter login integration
+- IP-based or wallet-based rate limiting via backend.
+- Admin dashboard for managing faucet config.
+- Twitter/Discord login for verification
 
 ---
 
 ## License
 
-MIT
+MIT. Free to use, fork, or improve.
 
 ---
 
